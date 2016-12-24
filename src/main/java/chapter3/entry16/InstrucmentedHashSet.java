@@ -39,6 +39,8 @@ public class InstrucmentedHashSet<E> extends HashSet<E> {
     InstrucmentedHashSet<Integer> selfSet = new InstrucmentedHashSet<>();
     selfSet.addAll(Arrays.asList(1, 2, 3));
     System.out.println(selfSet.getAddCount()); // print 6 because of dynamic binding
+    List<String> listOfString = new ArrayList<>();
+
   }
 
 
