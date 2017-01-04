@@ -19,6 +19,8 @@ public class DeserializeDemo {
       FileInputStream inputStream = new FileInputStream(SerializeDemo.OUT_FILE);
       ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
       Employee e = (Employee) objectInputStream.readObject();
+      objectInputStream.close();
+      inputStream.close();
       System.out.println(e);
     } catch (IOException | ClassNotFoundException e) {
       e.printStackTrace();

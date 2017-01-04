@@ -1,6 +1,5 @@
 package chapter10.entry74.serializeDemo;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -25,6 +24,7 @@ public class SerializeDemo {
       ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
       objectOutputStream.writeObject(e);
       objectOutputStream.close();
+      fileOutputStream.close();
     } catch (IOException e1) {
       e1.printStackTrace();
     }
