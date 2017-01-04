@@ -2,3 +2,4 @@
 *.iml
 Enum
 target
+*.tmp
